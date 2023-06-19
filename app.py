@@ -40,7 +40,6 @@ test_cases = [
 # Validating test cases
 print("Running Test-Cases")
 for t in test_cases:
-    n = 10
     result = solution(t["input"])
     if result == t["output"]:
         print(f"{t['name']} - PASSED")
