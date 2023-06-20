@@ -14,7 +14,7 @@ Your graduation ceremony is on the last day of the academic year, which is the N
 Represent the solution in the string format as "Answer of (2) / Answer of (1)", don't actually divide or reduce the fraction to decimal
 
 
-## Explanation of code
+## Explanation of code solution-1 (Written in /app.py)
 
 1. The function takes an integer n as input, which represents the number of days.
 
@@ -45,6 +45,32 @@ Represent the solution in the string format as "Answer of (2) / Answer of (1)", 
 -'previous_3_days_attended' + 'previous_2_days_attended' + 'previous_day_attended' represents the total number of ways to attend classes over n days, considering the previous three days, previous two days, and the previous day attended. count represents the total count of ways to attend classes over n days.
 
 
+## Explanation of code solution-2 (Written in /solution.py)
+
+Solution-1 (app.py) is not completely logic. I have taken help from internet. Becase, that solution's Time & Space complexities was good.
+
+My own solution is written in /solution.py file. So, please refer that for evaluation.
+
+Time Complexity:
+
+1. Generating Combinations: As mentioned earlier, generating all possible combinations of length n using itertools.product has a time complexity of O(2^n).
+
+2. Iterating Over Combinations: The function iterates over each combination generated. Since there are 2^n combinations, the time complexity of this step is O(2^n).
+
+3. Checking for 'AAAA': For each combination, the function checks if the string 'AAAA' is present. This check requires examining each character in the combination, which takes O(n) time.
+
+Therefore, the overall time complexity of the print_combinations function is the sum of the time complexities of the above steps:
+
+O(2^n) + O(2^n) + O(n) = O(2 * 2^n + n).
+
+
+Space Complexity:
+
+1. Combinations List: The function stores all the combinations in a list called combinations. The size of this list is 2^n since it contains all possible combinations. Therefore, the space complexity of storing the combinations is O(2^n).
+
+2. Additional Variables: The function uses a few additional variables (ways_to_attend_classes, ways_to_absent_at_cermoney, etc.) to keep track of the counts. These variables do not depend on the input size and occupy constant space. Hence, their space complexity is O(1).
+
+Thus, the overall space complexity of the print_combinations function is O(2^n).
 
 
 #### Prerequisite
@@ -53,5 +79,5 @@ Represent the solution in the string format as "Answer of (2) / Answer of (1)", 
 #### How to run the code?
 To run the code execute following command:
 ```
-python app.py
+python solution.py
 ```
