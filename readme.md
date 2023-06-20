@@ -14,7 +14,7 @@ Your graduation ceremony is on the last day of the academic year, which is the N
 Represent the solution in the string format as "Answer of (2) / Answer of (1)", don't actually divide or reduce the fraction to decimal
 
 
-## Explanation of code solution-1 (Written in /app.py)
+## Explanation of Solution-1 (/app.py)
 
 1. The function takes an integer n as input, which represents the number of days.
 
@@ -45,9 +45,9 @@ Represent the solution in the string format as "Answer of (2) / Answer of (1)", 
 -'previous_3_days_attended' + 'previous_2_days_attended' + 'previous_day_attended' represents the total number of ways to attend classes over n days, considering the previous three days, previous two days, and the previous day attended. count represents the total count of ways to attend classes over n days.
 
 
-## Explanation of code solution-2 (Written in /solution.py)
+## Explanation of Solution-2 (/solution.py)
 
-Solution-1 (app.py) is not completely logic. I have taken help from internet. Becase, that solution's Time & Space complexities was good.
+Solution-1 (app.py) is not completely my logic. I have taken help from internet for that logic. Because, that solution's Time & Space complexities was better than my logic.
 
 My own solution is written in /solution.py file. So, please refer that for evaluation.
 
