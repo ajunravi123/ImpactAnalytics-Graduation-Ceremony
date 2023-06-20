@@ -1,8 +1,8 @@
 # Pass days (n) as argument
 def solution(n):
     if n<4:
-        probability = 2 ** (n - 1)
-        number_of_ways_to_attend = 2 ** n
+        probability = str(2 ** (n - 1))
+        number_of_ways_to_attend = str(2 ** n)
     else:
         previous_day_attended = 2
         previous_2_days_attended = 1
